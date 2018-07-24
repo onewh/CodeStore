@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CodeStore"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = " Convenient iOS Code collections."
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/onewh/CodeStore.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/onewh/CodeStore.git", :tag => "#{0.0.2}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
