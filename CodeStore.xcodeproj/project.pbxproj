@@ -10,6 +10,7 @@
 		53F11A022106DA7C00CFB53C /* CodeStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F119F82106DA7C00CFB53C /* CodeStore.framework */; };
 		53F11A072106DA7C00CFB53C /* CodeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F11A062106DA7C00CFB53C /* CodeStoreTests.swift */; };
 		53F11A092106DA7C00CFB53C /* CodeStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 53F119FB2106DA7C00CFB53C /* CodeStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53F11A8D21070F7500CFB53C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F11A8C21070F7500CFB53C /* UIColor+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		53F11A012106DA7C00CFB53C /* CodeStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F11A062106DA7C00CFB53C /* CodeStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeStoreTests.swift; sourceTree = "<group>"; };
 		53F11A082106DA7C00CFB53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F11A8C21070F7500CFB53C /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				53F119FB2106DA7C00CFB53C /* CodeStore.h */,
+				53F11A8C21070F7500CFB53C /* UIColor+Hex.swift */,
 				53F119FC2106DA7C00CFB53C /* Info.plist */,
 			);
 			path = CodeStore;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					53F119F72106DA7C00CFB53C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					53F11A002106DA7C00CFB53C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F11A8D21070F7500CFB53C /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		53F11A0D2106DA7C00CFB53C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.onewh.CodeStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		53F11A0E2106DA7C00CFB53C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		53F11A102106DA7C00CFB53C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T45M5L8GE;
 				INFOPLIST_FILE = CodeStoreTests/Info.plist;
@@ -407,6 +416,7 @@
 		53F11A112106DA7C00CFB53C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T45M5L8GE;
 				INFOPLIST_FILE = CodeStoreTests/Info.plist;
