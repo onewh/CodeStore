@@ -19,7 +19,7 @@ extension UIColor {
             cString.remove(at: cString.startIndex)
         }
         
-        if ((cString.characters.count) != 6) {
+        if ((cString.count) != 6) {
             return UIColor.gray
         }
         
@@ -41,7 +41,7 @@ extension UIColor {
             cString.remove(at: cString.startIndex)
         }
         
-        if ((cString.characters.count) != 6) {
+        if ((cString.count) != 6) {
             return UIColor.gray
         }
         
@@ -96,7 +96,7 @@ extension UIColor {
         }
         
         var rgbValue:UInt32 = 0
-        if ((cString.characters.count) != 6) {
+        if ((cString.count) != 6) {
             cString = "000000"
         }
         Scanner(string: cString).scanHexInt32(&rgbValue)
