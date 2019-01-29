@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppInfoUtility: NSObject {
+open class AppInfoUtility: NSObject {
 
     @objc public static func appVersion() -> String {
         if let ver = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
@@ -16,4 +16,6 @@ class AppInfoUtility: NSObject {
         }
         return ""
     }
+    
+    
 }
