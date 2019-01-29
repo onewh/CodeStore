@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc
+
 public
 extension UIColor {
     
